@@ -13,3 +13,16 @@ add mouseover listener to squares
 on mouseover = () => {}
     apply dark styling to square
 */
+
+function draw(sideNumber) {
+    let bodyVar = document.body;
+    for (i = 0; i < sideNumber - 1; i++) {
+        let newRow = document.createElement('div');
+        newRow.classList.add('row');
+        for (j = 0; j < sideNumber - 1; j++) {
+            let newSquare = document.createElement('div');
+            newSquare.classList.add('square');
+            newRow.appendChild(newSquare);
+        }
+    }
+}
