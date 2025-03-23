@@ -18,3 +18,7 @@ body {
     flex: 1;
     gap: 3px;
 }
+
+.square {
+    flex: 1;
+}
