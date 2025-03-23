@@ -16,6 +16,7 @@ on mouseover = () => {}
 
 let canvas = document.createElement('div');
 canvas.classList.add('canvas');
+document.body.appendChild(canvas);
 
 function draw(sideNumber) {
     canvas.replaceChildren();
@@ -31,3 +32,5 @@ function draw(sideNumber) {
         canvas.appendChild(newRow);
     }
 }
+
+draw(16);
