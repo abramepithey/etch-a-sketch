@@ -11,6 +11,8 @@ body {
     gap: 3px;
     margin: auto;
     background-color: #808080;
+    border: 3px solid #808080;
+    box-sizing: border-box;
 }
 
 .row {
