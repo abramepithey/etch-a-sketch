@@ -30,3 +30,9 @@ body {
 .dark {
     background-color: black;
 }
+
+#resize {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
