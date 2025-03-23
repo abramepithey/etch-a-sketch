@@ -14,9 +14,7 @@ on mouseover = () => {}
     apply dark styling to square
 */
 
-let canvas = document.createElement('div');
-canvas.classList.add('canvas');
-document.body.appendChild(canvas);
+let canvas = document.querySelector('.canvas');
 
 function draw(sideNumber) {
     canvas.replaceChildren();
@@ -34,3 +32,4 @@ function draw(sideNumber) {
 }
 
 draw(16);
+
