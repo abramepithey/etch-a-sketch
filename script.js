@@ -18,10 +18,10 @@ let canvas = document.querySelector('.canvas');
 
 function draw(sideNumber) {
     canvas.replaceChildren();
-    for (i = 0; i < sideNumber - 1; i++) {
+    for (i = 0; i < sideNumber; i++) {
         let newRow = document.createElement('div');
         newRow.classList.add('row');
-        for (j = 0; j < sideNumber - 1; j++) {
+        for (j = 0; j < sideNumber; j++) {
             let newSquare = document.createElement('div');
             newSquare.classList.add('square');
             newSquare.classList.add('light');
