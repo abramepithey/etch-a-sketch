@@ -29,6 +29,7 @@ function draw(sideNumber) {
         }
         canvas.appendChild(newRow);
     }
+    setSquaresInteractive();
 }
 
 draw(16);
