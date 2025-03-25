@@ -33,3 +33,6 @@ function draw(sideNumber) {
 
 draw(16);
 
+let resizeButton = document.getElementById('resize');
+resizeButton.addEventListener('click', () => {
+})
