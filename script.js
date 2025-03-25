@@ -35,4 +35,17 @@ draw(16);
 
 let resizeButton = document.getElementById('resize');
 resizeButton.addEventListener('click', () => {
+    let response = prompt('Enter a size', '16');
+    if (!isNaN(response)) {
+        if (response > 100) {
+            draw(100);
+            alert('Number is over 100, defaulting to 100')
+        }
+        else {
+            draw(response);
+        }
+    }
+    else {
+        alert('Input a number, max of 100');
+    }
 })
