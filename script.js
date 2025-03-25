@@ -42,6 +42,10 @@ resizeButton.addEventListener('click', () => {
             draw(100);
             alert('Number is over 100, defaulting to 100')
         }
+        else if (response < 1) {
+            draw(16);
+            alert('Number is less than 1, defaulting to 16')
+        }
         else {
             draw(response);
         }
