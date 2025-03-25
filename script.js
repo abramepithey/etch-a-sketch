@@ -49,3 +49,8 @@ resizeButton.addEventListener('click', () => {
         alert('Input a number, max of 100');
     }
 })
+
+let darkSquare = document.querySelector('.square');
+darkSquare.addEventListener('onmouseover', () => {
+    
+})
