@@ -54,8 +54,6 @@ function setSquaresInteractive() {
     let darkSquares = document.querySelectorAll(".square");
     for (i = 0; i < darkSquares.length; i++) {
         darkSquares[i].addEventListener("mouseover", (event) => {
-            event.target.classList.add("dark");
-            event.target.classList.remove("light");
         });
     }
 }
