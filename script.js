@@ -38,20 +38,18 @@ let resizeButton = document.getElementById('resize');
 resizeButton.addEventListener('click', () => {
     let response = prompt('Enter a size', '16');
     if (!isNaN(response)) {
-        if (response > 100) {
-            draw(100);
-            alert('Number is over 100, defaulting to 100')
-        }
-        else if (response < 1) {
-            draw(16);
-            alert('Number is less than 1, defaulting to 16')
-        }
-        else {
-            draw(response);
-        }
+        alert('Input a number, max of 100');
+    }
+    else if (response > 100) {
+        draw(100);
+        alert('Number is over 100, defaulting to 100')
+    }
+    else if (response < 1) {
+        draw(16);
+        alert('Number is less than 1, defaulting to 16')
     }
     else {
-        alert('Input a number, max of 100');
+        draw(response);
     }
 })
 
