@@ -50,7 +50,8 @@ resizeButton.addEventListener('click', () => {
     }
 })
 
-let darkSquare = document.querySelector('.square');
-darkSquare.addEventListener('onmouseover', () => {
-    
-})
+let darkSquares = document.querySelectorAll('.square');
+for (i = 0; i < darkSquares.length; i++) {
+    darkSquares[i].addEventListener('onmouseover', event => {
+    })
+}
