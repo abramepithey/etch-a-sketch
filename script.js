@@ -59,7 +59,7 @@ function darken(event) {
 
 let opacity = 0;
 function setSquaresInteractive() {
-    let darkSquares = document.querySelectorAll(".square");
+    let darkSquares = document.querySelectorAll(".cover");
     for (i = 0; i < darkSquares.length; i++) {
         darkSquares[i].addEventListener("mouseover", (event) => darken(event));
     }
