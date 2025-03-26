@@ -30,6 +30,7 @@ body {
 }
 
 .dark {
+    opacity: 0;
     background-color: black;
 }
 
