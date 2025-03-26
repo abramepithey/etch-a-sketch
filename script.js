@@ -52,10 +52,15 @@ resizeButton.addEventListener("click", () => {
     }
 });
 
+function darken(event) {
+    opacity = Number(window.getComputedStyle(event.target).getPropertyValue("opacity")) + 0.1;
+    event.target.style.opacity = opacity;
+}
+
+let opacity = 0;
 function setSquaresInteractive() {
     let darkSquares = document.querySelectorAll(".square");
     for (i = 0; i < darkSquares.length; i++) {
-        darkSquares[i].addEventListener("mouseover", (event) => {
-        });
+        darkSquares[i].addEventListener("mouseover", (event) => darken(event));
     }
 }
