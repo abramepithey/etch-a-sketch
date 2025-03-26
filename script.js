@@ -24,6 +24,9 @@ function draw(sideNumber) {
         for (j = 0; j < sideNumber; j++) {
             let newSquare = document.createElement("div");
             newSquare.classList.add("square", "light");
+            let darkCover = document.createElement("div");
+            darkCover.classList.add("cover", "dark");
+            newSquare.appendChild(darkCover);
             newRow.appendChild(newSquare);
         }
         canvas.appendChild(newRow);
