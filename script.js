@@ -61,6 +61,12 @@ let opacity = 0;
 function setSquaresInteractive() {
     let darkSquares = document.querySelectorAll(".cover");
     for (i = 0; i < darkSquares.length; i++) {
+        darkSquares[i].addEventListener("mouseover", (event) => {
+            let red = Math.floor(Math.random() * 256);
+            let green = Math.floor(Math.random() * 256);
+            let blue = Math.floor(Math.random() * 256);
+            event.target.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
+        });
         darkSquares[i].addEventListener("mouseover", (event) => darken(event));
     }
 }
