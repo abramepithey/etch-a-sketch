@@ -23,7 +23,10 @@ function draw(sideNumber) {
         newRow.classList.add("row");
         for (j = 0; j < sideNumber; j++) {
             let newSquare = document.createElement("div");
-            newSquare.classList.add("square", "light");
+            newSquare.classList.add("square");
+            let lightCover = document.createElement("div");
+            lightCover.classList.add("cover", "light");
+            newSquare.appendChild(lightCover);
             let darkCover = document.createElement("div");
             darkCover.classList.add("cover", "dark");
             newSquare.appendChild(darkCover);
