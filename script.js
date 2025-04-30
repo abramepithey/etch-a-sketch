@@ -71,6 +71,8 @@ let opacity = 0;
 function setSquaresInteractive() {
     let squares = document.querySelectorAll(".square");
     for (i = 0; i < squares.length; i++) {
+        let childLight = squares[i].querySelector(".light");
+        let childDark = squares[i].querySelector(".dark");
         squares[i].addEventListener("mouseover", (event) => {
                 let red = Math.floor(Math.random() * 256);
                 let green = Math.floor(Math.random() * 256);
