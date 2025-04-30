@@ -55,9 +55,16 @@ resizeButton.addEventListener("click", () => {
     }
 });
 
-function darken(event) {
-    opacity = Number(window.getComputedStyle(event.target).getPropertyValue("opacity")) + 0.1;
-    event.target.style.opacity = opacity;
+function darken(element) {
+    opacity = Number(window.getComputedStyle(element).getPropertyValue("opacity")) + 0.2;
+    if (opacity <= 1)
+        element.style.opacity = opacity;
+}
+
+function lighten(element) {
+    opacity = Number(window.getComputedStyle(element).getPropertyValue("opacity")) - 0.2;
+    if (opacity >= 0)
+        element.style.opacity = opacity;
 }
 
 let opacity = 0;
