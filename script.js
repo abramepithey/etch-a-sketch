@@ -74,6 +74,7 @@ function setSquaresInteractive() {
         let childLight = squares[i].querySelector(".light");
         let childDark = squares[i].querySelector(".dark");
         squares[i].addEventListener("mouseover", (event) => {
+            if (event.target.style.backgroundColor === "") {
                 let red = Math.floor(Math.random() * 256);
                 let green = Math.floor(Math.random() * 256);
                 let blue = Math.floor(Math.random() * 256);
