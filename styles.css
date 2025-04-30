@@ -24,7 +24,7 @@ body {
 
 .square {
     flex: 1;
-    background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 .light {
@@ -38,6 +38,7 @@ body {
 }
 
 .cover {
+    position: absolute;
     height: 100%;
     width: 100%;
 }
