@@ -79,7 +79,10 @@ function setSquaresInteractive() {
                 let green = Math.floor(Math.random() * 256);
                 let blue = Math.floor(Math.random() * 256);
                 event.target.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
+            }
+            if (Number(window.getComputedStyle(childLight).getPropertyValue("opacity")) === 0)
+                darken(childDark);
+            lighten(childLight);
         });
-        squares[i].addEventListener("mouseover", (event) => darken(event));
     }
 }
